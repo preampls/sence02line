@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">02online</string>
+    <string name="main_activity_001">第一章</string>
+    <string name="main_activity_002">第二章</string>
+    <string name="main_activity_003">第三章</string>
+    <string name="main_activity_004">第四章</string>
+    <string name="main_activity_005">第五章</string>
+    <string name="main_activity_006">第六章</string>
+    <string name="main_activity_007">第七章</string>
+    <string name="main_activity_008">第八章</string>
+    <string name="main_activity_009">第九章</string>
+    <string name="main_activity_0010">第十章</string>
 </resources>
