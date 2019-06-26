@@ -12,7 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".base.BaseActivity"></activity>
+        <activity
+            android:name=".chapater2.Chapater2Activity"
+            android:label="@string/title_activity_chapater2"
+            android:parentActivityName=".base.BaseActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ls.example.t.myapplication.base.BaseActivity" />
+        </activity>
+        <activity android:name=".base.BaseActivity" />
         <activity android:name=".chapater1.Chapater1_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>

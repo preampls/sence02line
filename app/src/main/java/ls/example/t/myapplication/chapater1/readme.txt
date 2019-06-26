@@ -34,4 +34,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    插件
+    1. Android Parcelable code generator
+    2. Android Code Generator
+    3. GsonFormat
+    4. Android Postfix Completion
+    5. Android Drawable Importer
+
 }

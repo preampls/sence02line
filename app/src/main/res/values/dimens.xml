@@ -1,0 +1,34 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="x2">2.0px</dimen>
+    <dimen name="x3">3.0px</dimen>
+    <dimen name="x4">4.0px</dimen>
+    <dimen name="x5">5.0px</dimen>
+    <dimen name="x6">6.0px</dimen>
+    <dimen name="x7">7.0px</dimen>
+    <dimen name="x8">8.0px</dimen>
+    <dimen name="x9">9.0px</dimen>
+    <dimen name="x10">10.0px</dimen>
+    ...
+    <dimen name="x300">300.0px</dimen>
+    <dimen name="x301">301.0px</dimen>
+    <dimen name="x302">302.0px</dimen>
+    <dimen name="x303">303.0px</dimen>
+    <dimen name="x304">304.0px</dimen>
+    <dimen name="x305">305.0px</dimen>
+    <dimen name="x306">306.0px</dimen>
+    <dimen name="x307">307.0px</dimen>
+    <dimen name="x308">308.0px</dimen>
+    <dimen name="x309">309.0px</dimen>
+    <dimen name="x310">310.0px</dimen>
+    <dimen name="x311">311.0px</dimen>
+    <dimen name="x312">312.0px</dimen>
+    <dimen name="x313">313.0px</dimen>
+    <dimen name="x314">314.0px</dimen>
+    <dimen name="x315">315.0px</dimen>
+    <dimen name="x316">316.0px</dimen>
+    <dimen name="x317">317.0px</dimen>
+    <dimen name="x318">318.0px</dimen>
+    <dimen name="x319">319.0px</dimen>
+    <dimen name="x320">320px</dimen>
+</resources>
