@@ -1,12 +1,12 @@
-package ls.example.t.myapplication;
+package ls.example.t.zero2line;
 
-import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import ls.example.t.myapplication.base.BaseActivity;
-import ls.example.t.myapplication.chapater1.Chapater1_Activity;
+import ls.example.t.zero2line.base.BaseActivity;
+import ls.example.t.zero2line.chapater1.Chapater1_Activity;
+import ls.example.t.zero2line.chapater2.Chapater2Activity;
+import ls.t.zero2line.R;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -40,6 +40,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 jumpActivity(Chapater1_Activity.class);
                 break;
             case R.id.main_activity_002:
+                jumpActivity(Chapater2Activity.class);
                 break;
             case R.id.main_activity_003:
                 break;

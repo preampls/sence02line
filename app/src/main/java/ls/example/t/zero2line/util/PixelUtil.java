@@ -1,4 +1,4 @@
-package ls.example.t.myapplication.util;
+package ls.example.t.zero2line.util;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

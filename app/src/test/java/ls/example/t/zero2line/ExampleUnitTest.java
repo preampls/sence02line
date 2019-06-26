@@ -1,4 +1,4 @@
-package ls.example.t.myapplication;
+package ls.example.t.zero2line;
 
 import org.junit.Test;
 

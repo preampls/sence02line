@@ -2,23 +2,52 @@
 <!-- 最外层的布局背景为蓝色 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="match_parent"
     android:background="#00aaff"
     android:orientation="vertical"
     android:padding="5dp">
 
-    <!-- 中间层的布局背景为黄色 -->
+
+
+
+    <!-- 这个是跑马灯滚动的文本视图，ellipsize属性设置为true表示文字从右向左滚动 -->
+    <TextView
+        android:id="@+id/tv_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:text="快讯：红色预警，超强台风“莫兰蒂”即将登陆，请居民关紧门窗、备足粮草，做好防汛救灾准备！" />
+    <!-- 这是普通的文本视图 -->
+    <TextView
+        android:id="@+id/tv_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="聊天室效果，点击添加聊天记录，长按删除聊天记录" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:background="#ffff99"
-        android:padding="60dp">
+        android:layout_height="200dp"
+        android:orientation="vertical">
 
-        <!-- 最内层的视图背景为红色 -->
-        <View
+        <!-- 这是聊天室的文本视图，scrollbars属性设置为vertical表示在垂直方向上显示滚动条 -->
+        <TextView
+            android:id="@+id/tv_bbs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ff0000" />
+            android:layout_marginTop="20dp"
+            android:gravity="left|bottom"
+            android:lines="8"
+            android:maxLines="8"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textSize="17sp" />
     </LinearLayout>
 </LinearLayout>

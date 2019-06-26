@@ -1,4 +1,4 @@
-package ls.example.t.myapplication;
+package ls.example.t.zero2line;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("ls.example.t.myapplication", appContext.getPackageName());
+        assertEquals("ls.example.t.zero2line", appContext.getPackageName());
     }
 }
