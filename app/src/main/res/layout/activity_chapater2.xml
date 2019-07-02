@@ -50,4 +50,11 @@
             android:textColor="#000000"
             android:textSize="17sp" />
     </LinearLayout>
+    
+    <TextView
+        android:id="@+id/radio_button_test"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:background="@color/white"
+        android:text="@string/radio_button_test"/>
 </LinearLayout>

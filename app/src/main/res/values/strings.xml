@@ -11,4 +11,6 @@
     <string name="main_activity_009">第九章</string>
     <string name="main_activity_0010">第十章</string>
     <string name="title_activity_chapater2">Chapater2Activity</string>
+    <string name="radio_button_test">RadioButtonTest</string>
+    <string name="title_activity_chapater2_1">Chapater2_1Activity</string>
 </resources>

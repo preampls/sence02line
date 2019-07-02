@@ -4,9 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".chapater2.Chapater2Activity"
-    tools:showIn="@layout/activity_chapater2"
     android:orientation="vertical">
 
+<ls.example.t.zero2line.view.MultiLineRadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x300"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/px_50">
+        <RadioButton
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment_other_revenue_filtrate"
+            />
+        <RadioButton
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment_other_revenue_filtrate"
+            />
+        <RadioButton
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment_other_revenue_filtrate"
+            />
+        <RadioButton
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment_other_revenue_filtrate"
+            />
+        <RadioButton
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment_other_revenue_filtrate"
+            />
+        <RadioButton
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment_other_revenue_filtrate"
+            />
+        <RadioButton
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment_other_revenue_filtrate"
+            />
+        <RadioButton
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_100"
+            android:button="@null"
+            android:textSize="@dimen/px_20"
+            android:gravity="center"
+            android:text="@string/radio_button_test"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_marginRight="@dimen/px_20"
+            android:drawableTop="@drawable/selector_nomal_bg"
+            />
+
+
+    </LinearLayout>
+
+</ls.example.t.zero2line.view.MultiLineRadioGroup>
 </LinearLayout>

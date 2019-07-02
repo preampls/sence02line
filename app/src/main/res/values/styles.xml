@@ -17,4 +17,14 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <style name="fragment_other_revenue_filtrate">
+        <item name="android:layout_width">@dimen/px_125</item>
+        <item name="android:layout_height">@dimen/px_60</item>
+        <item name="android:layout_marginLeft">@dimen/px_20</item>
+        <item name="android:textSize">@dimen/px_20</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_other_revenue_filtrate_text</item>
+        <item name="android:background">@drawable/selector_other_revenue_filtrate_bg</item>
+    </style>
 </resources>
