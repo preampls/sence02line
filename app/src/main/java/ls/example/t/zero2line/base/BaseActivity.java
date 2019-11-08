@@ -8,7 +8,7 @@ import android.os.Bundle;
 import ls.t.zero2line.R;
 
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends Activity {
 
     private Activity mContext;
     @Override

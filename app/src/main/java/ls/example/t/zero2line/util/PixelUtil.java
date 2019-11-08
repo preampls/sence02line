@@ -1,11 +1,13 @@
 package ls.example.t.zero2line.util;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
 public class PixelUtil {
-
+    public static final int NORMAL_DENSITY = 160;
+    public static final float HALF_ADJUST = 0.5f;
 
     //屏幕的宽度
     public static int getScreenWidth(Context ctx) {
@@ -39,5 +41,56 @@ public class PixelUtil {
 
 
 
+    /**
+     * dp to px.
+     *
+     * @param value the value
+     * @return the int
+     */
+    public static int dp2px(Context context, float value) {
+        final float scale = context.getResources().getDisplayMetrics().densityDpi;
+        return (int) (value * (scale / NORMAL_DENSITY) + HALF_ADJUST);
+    }
 
+    /**
+     * px to dp.
+     *
+     * @param value   the value
+     * @param context the context
+     * @return the int
+     */
+    public static int px2dp(Context context, float value) {
+        final float scale = context.getResources().getDisplayMetrics().densityDpi;
+        return (int) ((value * NORMAL_DENSITY) / scale + HALF_ADJUST);
+    }
+
+    /**
+     * sp to px.
+     *
+     * @param value   the value
+     * @param context the context
+     * @return the int
+     */
+    public static int sp2px(Context context, float value) {
+        Resources r;
+        if (context == null) {
+            r = Resources.getSystem();
+        } else {
+            r = context.getResources();
+        }
+        float spvalue = value * r.getDisplayMetrics().scaledDensity;
+        return (int) (spvalue + HALF_ADJUST);
+    }
+
+    /**
+     * px to sp.
+     *
+     * @param value   the value
+     * @param context the context
+     * @return the int
+     */
+    public static int px2sp(Context context, float value) {
+        final float scale = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int) (value / scale + HALF_ADJUST);
+    }
 }

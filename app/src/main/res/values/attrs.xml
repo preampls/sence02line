@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlashView">
+        <attr name="effect">
+            <enum name="accordion" value="0"/>
+            <enum name="cube" value="1"/>
+            <enum name="def" value="2"/>
+            <enum name="depthPage" value="3"/>
+            <enum name="inRightDown" value="4"/>
+            <enum name="inRightUp" value="5"/>
+            <enum name="rotate" value="6"/>
+            <enum name="zoomOutPage" value="7"/>
+            
+        </attr>
+        <attr name="MyText">
+            <enum name="caiyun" value="1"></enum>
+            <enum name="shaonv" value="2"></enum>
+            <enum name="shoujin" value="3"></enum>
+            <enum name="wawa" value="4"></enum>
+            <enum name="xingshu" value="5"></enum>
+        </attr>
+        
+    </declare-styleable>
+    
+    
+    <declare-styleable name="MyRadioButton">
+        <attr name="rb_width" format="reference"/>
+        <attr name="rb_height" format="reference"/>
+    </declare-styleable>
+</resources>

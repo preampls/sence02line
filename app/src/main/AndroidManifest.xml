@@ -14,10 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name="ls.example.t.zero2line.UnitTestActivity"></activity>
+        <activity android:name="ls.example.t.zero2line.chapaterSource.ChapaterSource003Activity" />
+        <activity android:name="ls.example.t.zero2line.chapaterSource.ChapaterSource002Activity" />
+        <activity android:name="ls.example.t.zero2line.chapaterSource.ChapaterSource01Activity" />
+        <activity android:name="ls.example.t.zero2line.chapaterSource.ChapaterSourceActivity" />
         <activity
             android:name="ls.example.t.zero2line.chapater2.Chapater2_1Activity"
             android:label="@string/title_activity_chapater2_1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="ls.example.t.zero2line.chapater2.Chapater2Activity"
             android:label="@string/title_activity_chapater2"

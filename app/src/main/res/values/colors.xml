@@ -152,4 +152,14 @@
     <color name="color_666666">#666666</color>
     <color name="color_999999">#999999</color>
     <color name="color_ececec">#ECECEC</color>
+    <color name="color_66aaff">#66AAFF</color>
+
+    <array name="splash_circle_colors">
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/pink</item>
+        <item>@color/orange</item>
+        <item>@color/aqua</item>
+        <item>@color/yellow</item>
+    </array>
 </resources>
