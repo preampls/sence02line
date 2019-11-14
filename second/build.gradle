@@ -1,15 +1,21 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+
     defaultConfig {
-        applicationId "ls.t.zero2line"
+//        applicationId "ls.hencoder.second"
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -17,25 +23,18 @@ android {
         }
     }
 
-
-    dynamicFeatures = [":dynamic_feature", ":dynamic_feature2"]
-
-
-
-
-    
-
-
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.android.support:design:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
     //安卓工具类库  https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
     implementation 'com.blankj:utilcode:1.3.4'
     //一个处理权限的库-easypermissions  https://github.com/googlesamples/easypermissions
@@ -45,13 +44,11 @@ dependencies {
     //Tangram是一套动态化构建 Native 页面的框架， https://github.com/alibaba/Tangram-Android/blob/master/README-ch.md
     implementation 'com.alibaba.android:tangram:2.0.5@aar'
     //集成腾讯X5浏览器内核 https://www.jianshu.com/p/7e101c33179e
-    implementation files('libs/tbs_sdk.jar')
+//    implementation files('libs/tbs_sdk.jar')
     // Rxrelay:既是一个Observable 也是 一个Consumer的RxJava。 https://github.com/JakeWharton/RxRelay
     implementation 'com.jakewharton.rxrelay2:rxrelay:2.1.1'
     //https://www.jianshu.com/p/502127a493fb
     implementation 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
     //单元测试 https://www.jianshu.com/p/472c4c35efdb
     testImplementation 'org.mockito:mockito-core:2.25.1'
-
-    implementation project(path: ':second')
 }

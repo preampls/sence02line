@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import ls.example.t.zero2line.base.BaseActivity;
-import ls.example.t.zero2line.chapater1.Chapater1_Activity;
 import ls.example.t.zero2line.chapater2.Chapater2Activity;
 import ls.example.t.zero2line.chapaterSource.ChapaterSource002Activity;
 import ls.example.t.zero2line.chapaterSource.ChapaterSource003Activity;
@@ -43,7 +42,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.main_activity_001:
-                jumpActivity(Chapater1_Activity.class);
+                jumpActivity(ls.hencoder.second.SecondModelMainActivity.class);
                 break;
             case R.id.main_activity_002:
                 jumpActivity(Chapater2Activity.class);
@@ -61,6 +60,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 jumpActivity(ChapaterSource003Activity.class);
                 break;
             case R.id.main_activity_007:
+                //
+                jumpActivity(UnitTestActivity.class);
                 break;
             case R.id.main_activity_008:
                 break;

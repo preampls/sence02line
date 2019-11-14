@@ -1,9 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ls.example.t.zero2line.UnitTestActivity">
+    android:orientation="vertical"
+    android:padding="@dimen/px_20"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <!--app:backgroundTint	按钮背景着色-->
+    <!--app:backgroundTintMode	按钮背景的着色模式-->
+    <!--app:icon	按钮图标（在文字左边，不能设置位置）-->
+    <!--app:iconSize	按钮图标大小-->
+    <!--app:iconPadding	按钮图标的内边距-->
+    <!--app:iconTint	按钮图标着色-->
+    <!--app:iconTintMode	按钮图标的着色模式-->
+    <!--app:additionalPaddingStartForIcon	按钮图标的左内边距-->
+    <!--app:additionalPaddingEndForIcon	按钮图标的右内边距-->
+    <!--app:strokeColor	按钮边框颜色-->
+    <!--app:strokeWidth	按钮边框宽度-->
+    <!--app:cornerRadius	按钮圆角角度-->
+    <!--app:rippleColor	按钮点击水波纹效果颜色-->
+    <!--android:textAppearance="?android:attr/textAppearanceLargeInverse" -->
+    <android.support.design.button.MaterialButton
+        android:id="@+id/materialButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Material Button"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:backgroundTint="@color/color_004E4F"
+        app:cornerRadius="@dimen/px_15"
+        app:iconSize="30dp"
+        app:rippleColor="@color/color_666666"
+        app:strokeColor="@color/red"
+        app:strokeWidth="1dp"
+        android:padding="@dimen/px_20"/>
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Button"
+        app:icon="@drawable/p001"
+        app:iconSize="@dimen/px_45"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:backgroundTint="@color/gray_8f"
+        app:cornerRadius="@dimen/px_12"
+        app:iconTint="@color/chocolate"
+        android:padding="@dimen/px_20"/>
+
+    <!--//app:chipSpacing	Chip在水平&垂直方向的间距-->
+    <!--app:chipSpacingHorizontal	Chip在水平方向的间距-->
+    <!--app:chipSpacingVertical	Chip在垂直方向的间距-->
+    <!--app:singleLine	是否单行显示Chip，默认为false-->
+    <!--app:singleSelection	是否为单选模式，默认为false-->
+    <!--Chip属性速查表：-->
+
+    <!--属性	介绍-->
+    <!--app:chipBackgroundColor	Chip背景颜色-->
+    <!--app:chipCornerRadius	Chip圆角角度-->
+    <!--app:chipStrokeColor	Chip边框颜色-->
+    <!--app:chipStrokeWidth	Chip边框宽度-->
+    <!--app:rippleColor	Chip点击水波纹效果颜色-->
+    <!--app:chipIconEnabled	是否在Chip上显示图标，默认为true-->
+    <!--app:chipIcon	Chip图标（在文字左边，不能设置位置）-->
+    <!--app:chipIconSize	Chip图标大小-->
+    <!--app:closeIconEnabled	是否显示Chip关闭按钮，默认为false-->
+    <!--app:closeIcon	Chip关闭按钮图标-->
+    <!--app:closeIconTint	Chip关闭按钮着色-->
+    <!--app:closeIconSize	Chip关闭按钮大小-->
+    <!--app:checkedIconEnabled	是否显示Chip选中图标，默认为true-->
+    <!--app:checkedIcon	Chip选中图标-->
+    <!--app:chipStartPadding	Chip左内边距-->
+    <!--app:chipEndPadding	Chip右内边距-->
+    <!--app:iconStartPadding	Chip图标左内边距-->
+    <!--app:iconEndPadding	Chip图标右内边距-->
+    <!--app:textStartPadding	Chip文字左内边距-->
+    <!--app:textEndPadding	Chip文字右内边距-->
+    <!--app:closeIconStartPadding	Chip关闭图标左内边距-->
+    <!--app:closeIconEndPadding	Chip关闭图标右内边距-->
+
+
+
+
+    <!--//app:strokeColor	MaterialCardView边框颜色-->
+    <!--app:strokeWidth	MaterialCardView边框宽度-->
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        >
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:checkedIconEnabled="false"
+            app:closeIcon="@mipmap/pic"
+            app:chipIcon="@mipmap/pic"
+            app:chipStrokeColor="@color/color_333333"
+            app:chipStrokeWidth="@dimen/px_4"
+            app:chipCornerRadius="@dimen/px_12"
+            android:text="all types"
+            android:textColor="@color/chocolate"
+            android:padding="@dimen/px_22"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            app:rippleColor="@color/colorAccent"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            />
+        <android.support.design.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="水波纹颜色"
+            android:textAllCaps="false"
+            app:rippleColor="@color/colorAccent"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            />
+
+    </android.support.design.card.MaterialCardView>
+    <!--作者：容华谢后-->
+    <!--链接：https://www.jianshu.com/p/b0b54537ac44-->
+    <!--来源：简书-->
+    <!--著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。-->
+</LinearLayout>

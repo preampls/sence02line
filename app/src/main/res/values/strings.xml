@@ -13,4 +13,6 @@
     <string name="title_activity_chapater2">Chapater2Activity</string>
     <string name="radio_button_test">RadioButtonTest</string>
     <string name="title_activity_chapater2_1">Chapater2_1Activity</string>
+    <string name="title_dynamic_feature">Module Title</string>
+    <string name="title_dynamic_feature2">Module Title</string>
 </resources>
