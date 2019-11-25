@@ -6,6 +6,7 @@ android {
         applicationId "ls.t.zero2line"
         minSdkVersion 22
         targetSdkVersion 28
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -19,11 +20,6 @@ android {
 
 
     dynamicFeatures = [":dynamic_feature", ":dynamic_feature2"]
-
-
-
-
-    
 
 
 }
@@ -54,4 +50,24 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:2.25.1'
 
     implementation project(path: ':second')
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    implementation 'com.blankj:swipe-panel:1.0'
+
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    // Optional, if you use support library fragments:
+    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'
+
+    //DoraemonKit目前已支持Weex工具，包括Console日志查看\Storage缓存查看\DevTool  //https://github.com/didi/DoraemonKit
+    debugImplementation 'com.didichuxing.doraemonkit:doraemonkit:2.0.1'
+    releaseImplementation 'com.didichuxing.doraemonkit:doraemonkit-no-op:2.0.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+
+    //  随着我们的项目越来越大，最终会遇到一个问题，就是所谓的65535的问题(方法数目过多，超过了65K的限制)。
+    api 'com.android.support:multidex:1.0.3'
+    api 'com.android.support:multidex-instrumentation:1.0.3'
+    //BRVAH是一个强大的RecyclerAdapter框架 https://www.jianshu.com/p/b343fcff51b0
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+
+
 }

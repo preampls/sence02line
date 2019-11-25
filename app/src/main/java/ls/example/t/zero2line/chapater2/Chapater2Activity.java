@@ -22,8 +22,33 @@ public class Chapater2Activity extends BaseActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.radio_button_test:
-                jumpActivity(Chapater2_1Activity.class);
+//                jumpActivity(Chapater2_1Activity.class);
                 break;
         }
+    }
+
+    @Override
+    public void initData(@android.support.annotation.Nullable android.os.Bundle bundle) {
+
+    }
+
+    @Override
+    public int bindLayout() {
+        return 0;
+    }
+
+    @Override
+    public void initView(@android.support.annotation.Nullable android.os.Bundle savedInstanceState, @android.support.annotation.Nullable android.view.View contentView) {
+
+    }
+
+    @Override
+    public void doBusiness() {
+
+    }
+
+    @Override
+    public void onDebouncingClick(@android.support.annotation.NonNull android.view.View view) {
+
     }
 }

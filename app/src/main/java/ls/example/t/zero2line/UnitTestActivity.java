@@ -4,6 +4,7 @@ import ls.example.t.zero2line.base.BaseActivity;
 import android.os.Bundle;
 import ls.t.zero2line.R;
 
+import  ls.example.t.zero2line.util.*;
 /**
  *
  * @Author Administrator
@@ -23,12 +24,35 @@ public class UnitTestActivity extends BaseActivity {
         Double d1=100.0;
         Double d2=100.0;
         if (d1.doubleValue()==d2.doubleValue()){
-            com.blankj.utilcode.utils.LogUtils.d("UnitTestActivity",true);
+           LogUtils.d("UnitTestActivity",true);
         }else {
-            com.blankj.utilcode.utils.LogUtils.d("UnitTestActivity",false);
+            LogUtils.d("UnitTestActivity",false);
         }
     }
 
 
-    
+    @Override
+    public void initData(@android.support.annotation.Nullable android.os.Bundle bundle) {
+
+    }
+
+    @Override
+    public int bindLayout() {
+        return 0;
+    }
+
+    @Override
+    public void initView(@android.support.annotation.Nullable android.os.Bundle savedInstanceState, @android.support.annotation.Nullable android.view.View contentView) {
+
+    }
+
+    @Override
+    public void doBusiness() {
+
+    }
+
+    @Override
+    public void onDebouncingClick(@android.support.annotation.NonNull android.view.View view) {
+
+    }
 }

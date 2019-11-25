@@ -22,20 +22,17 @@ public class XfermodeView extends View {
 
     public XfermodeView(Context context) {
         super(context,null, R.style.AppTheme);
-        init();
     }
 
     public XfermodeView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs,0);
-        init();
     }
 
     public XfermodeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init();
     }
 
-    private void init() {
+    {
         //初始化画笔
         mPaint = new Paint();
         mPaint.setColor(Color.GRAY);
